@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;  
+   
+ 
+}
+#over{
+    background-color: rgba(0, 0, 0, 0.500);
+    height: 100%;
+    width: 100%;
+}
+h1{
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(0, 255, 255, 0.588);
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1428353077903-d09b3e000f37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njd8fGZsb3dlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+
+}
+#main img{
+    transition: all cubic-bezier(0.19 ,1,0.23,1)1s;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60%;
+    border-radius: 20px;
+}
+#main #one{
+    left: 40%;
+}
+#main #over #two{
+    left: 50;
+    z-index:1;
+}
+#main #over #three{
+    left: 60%;
+}
+#main img:hover{
+    height: 65%;
+    width: 25%;
+    z-index: 999;
+}
